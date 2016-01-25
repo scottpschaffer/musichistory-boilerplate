@@ -4,10 +4,90 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
+  <div class="first">
+    <ul>
+    <li><a href="#">View Music</a></li><span class="divider"> </span>
+    <li><a href="#">Add Music</a></li><span class="divider"> </span>
+    <li><a href="#">Profile</a></li>
+  </ul>
+  </div>
 
+  <form>
+    <div class="second">
+      <div class="sec">
+        <label for="range1">Song length:</label><br>
+        <input type="range" name="range1"><br>
+      </div>
+      <div class="sec">
+        <label for="artists">Artist:</label><br>  
+        <select name="artists">
+          <option value="Phil Collins" selected>Phil Collins</option>
+          <option value="They Might Be Giants">They Might Be Giants</option>
+          <option value="Morrissey">Morrissey</option>
+          <option value="Squeeze">Squeeze</option>
+          <option value="Van Morrison">Van Morrison</option>
+        </select>
+      </div>
+      <div class="sec">
+        <label for="albums">Album:</label><br>
+        <select name="albums">
+          <option value="Face Value">Face Value</option>
+          <option value="Both Sides">Both Sides</option>
+          <option value="Dance Into the Light">Dance Into the Light</option>
+          <option value="Hello, I Must Be Going!">Hello, I Must Be Going!</option>
+          <option value="No Jacket Required">No Jacket Required</option>
+        </select>
+      </div>
+       <div class="sec">
+        <label for="checkboxes">Genre:</label>
+      </div>
+
+        <span class="checkboxes">
+          <div>
+            <input type="checkbox" name="Rock" value="Rock">
+            <label for="Rock">Rock</label>
+            </div>
+            <div>
+            <input type="checkbox" name="Pop" value="Pop">
+            <label for="Pop">Pop</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Blues" value="Blues">
+            <label for="Blues">Blues</label>
+          </div>
+        </span>
+        <span class="checkboxes">
+          <div>
+            <input type="checkbox" name="Classical" value="Classical">
+            <label for="Classical">Classical</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Jazz" value="Jazz">
+            <label for="Jazz">Jazz</label>
+          </div>
+          <div>
+            <input type="checkbox" name="HipHop" value="HipHop">
+            <label for="HipHop">Hip hop</label>
+          </div>
+        </span>
+      <button>Filter</button>
+    </div>
+  </form>
+
+  <div class="third">
+    <h2>Steal My Heart Away</h2>
+    <p>Van Morrison | Down The Road | Rock</p>
+    <h2>In The Air Tonight</h2>
+    <p>Phil Collins | Face Value | Pop</p>
+    <h2>Black Ops</h2>
+    <p>They Might Be Giants | Nanobots | Rock</p>
+    <h2>If It's Love</h2>
+    <p>Squeeze | Frank | Pop</p>
+  </div>
 
 </body>
 </html>
